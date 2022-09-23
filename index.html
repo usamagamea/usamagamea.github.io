@@ -427,8 +427,8 @@
         <div class="contact-form">
           <div class="contact-form-inner">
             <div class="contact-form-container">
-              <button type="button" class="close-btn toggle-contact-form-btn"></button>
-              <form id="form" onsubmit="sendEmail()">
+              <button type="button" onclick="resetForm()" class="close-btn toggle-contact-form-btn"></button>
+              <form id="form" autocomplete="off" onsubmit="sendEmail()">
                 <div class="row">
                   <div class="input-group">
                     <input type="text" id="name" placeholder="Your Name" class="input-control">

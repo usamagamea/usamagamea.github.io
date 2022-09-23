@@ -228,4 +228,9 @@ function sendEmail() {
     }).then(
         message => console.log(message)
     );
+
+    function resetForm() {
+        document.getElementById("form").reset();
+    }
+    resetForm();
 }
