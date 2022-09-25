@@ -226,11 +226,12 @@ function sendEmail() {
         Subject: document.getElementById("subject").value,
         Body: document.getElementById("message").value,
     }).then(
-        message => console.log(message)
+        message => alert(message),
+
     );
 
     function resetForm() {
         document.getElementById("form").reset();
     }
-    resetForm();
+    // resetForm();
 }
